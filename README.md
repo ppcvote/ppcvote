@@ -12,10 +12,10 @@ I build open-source AI security tools. One-person operation, 4 AI agents, 5 prod
 
 ### Research
 
-**Prompt Defense Posture Study** — 121 leaked production system prompts scanned ([dataset](https://github.com/jujumilk3/leaked-system-prompts))
-- 96.7% have no indirect injection defense, 91.7% no role boundary enforcement
-- Average defense score: 43/100. Zero prompts scored an A.
-- Products: ChatGPT, Claude, Grok, Perplexity, Cursor, v0, Copilot
+**Prompt Defense Posture Study** — 1,646 production system prompts scanned from 4 public datasets
+- 97.8% have no indirect injection defense, 92.4% no role boundary enforcement
+- Average defense score: 36/100. Only 1.1% scored an A. 78.3% scored F.
+- Sources: ChatGPT, Claude, Grok, Perplexity, Cursor, v0, Copilot, 1,300+ GPT Store custom GPTs
 
 **AI Visibility Score Validation** — [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
 - 155 queries, 816 AI citations, 721 URLs scanned for SEO + AEO
