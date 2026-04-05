@@ -10,13 +10,16 @@ I build open-source AI security tools. One-person operation, 4 AI agents, 5 prod
 
 **[UltraProbe](https://ultralab.tw/en/probe)** — AI Visibility Scanner. SEO + AEO + Agent Accessibility. 92 checks, deterministic, zero cost.
 
-### Empirical Research
+### Research
+
+**Prompt Defense Posture Study** — 121 leaked production system prompts scanned ([dataset](https://github.com/jujumilk3/leaked-system-prompts))
+- 96.7% have no indirect injection defense, 91.7% no role boundary enforcement
+- Average defense score: 43/100. Zero prompts scored an A.
+- Products: ChatGPT, Claude, Grok, Perplexity, Cursor, v0, Copilot
 
 **AI Visibility Score Validation** — [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
-- 155 queries across 5 domains submitted to OpenAI `web_search`
-- 816 AI citations collected, 721 unique URLs scanned
-- Finding: median AVS of AI-cited sites is 77/100 (Grade B)
-- Finding: 96% of production AI apps have zero indirect injection defense (n=721)
+- 155 queries, 816 AI citations, 721 URLs scanned for SEO + AEO
+- Median AVS of AI-cited sites: 77/100 (Grade B)
 
 ### Contributing To
 
