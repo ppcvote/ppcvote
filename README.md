@@ -1,67 +1,54 @@
-## Hey, I'm MinYi
+## MinYi Xie
 
-I run 5 products with 4 AI agents and 0 employees.
+I build open-source AI security tools. One-person operation, 4 AI agents, 5 products in production.
 
-**Ultra Lab** is an AI product company in Taiwan. I build tools, define standards, and publish research — all as a one-person operation powered by AI.
+### AI Security & Standards
 
-### What I'm Working On
+**[AI Application Security Standard (AASS)](https://github.com/ppcvote/avs-standard)** — Open standard for evaluating AI security, visibility, and data protection. Three dimensions, one score.
 
-🔬 **[AI Visibility Score (AVS)](https://github.com/ppcvote/avs-standard)** — The first open standard for measuring website discoverability by AI search engines. Validated with 155 queries × 816 citations × 721 AVS scores. [Paper (DOI: 10.5281/zenodo.19410475)](https://doi.org/10.5281/zenodo.19410475)
+**[prompt-defense-audit](https://github.com/ppcvote/prompt-defense-audit)** — LLM system prompt defense scanner. 12 attack vectors, pure regex, < 5ms. `npx prompt-defense-audit "Your prompt"`
 
-🔍 **[UltraProbe](https://ultralab.tw/probe)** — AI Visibility Scanner. SEO + AEO + Prompt Security. 100% deterministic, zero AI cost, < 50ms. Community benchmark flywheel — every scan strengthens the system.
+**[UltraProbe](https://ultralab.tw/en/probe)** — AI Visibility Scanner. SEO + AEO + Agent Accessibility. 92 checks, deterministic, zero cost.
 
-### Products
+### Empirical Research
 
-| Product | What | Link |
-|---------|------|------|
-| 🔍 **UltraProbe** | AI Visibility Scanner — AVS + SEO + AEO + Prompt Security | [ultralab.tw/probe](https://ultralab.tw/probe) |
-| 🧵 **MindThread** | Threads multi-account automation — 27 accounts, 3.3M views | [mindthread.tw](https://mindthread.tw) |
-| 🤖 **Agent Fleet** | 4 autonomous AI agents, 34 timers, 105 daily tasks | [ultralab.tw/agent](https://ultralab.tw/agent) |
-| 💰 **Ultra Advisor** | Financial planning SaaS — 18 visualization tools | [ultra-advisor.tw](https://ultra-advisor.tw) |
-| 📈 **UltraTrader** | Taiwan stock algorithmic trading | In development |
-
-### Open Source
-
-| Repo | What | Stars |
-|------|------|:-----:|
-| **[avs-standard](https://github.com/ppcvote/avs-standard)** | AI Visibility Score spec + validation paper + dataset | ![](https://img.shields.io/github/stars/ppcvote/avs-standard?style=flat) |
-| **[prompt-defense-audit](https://github.com/ppcvote/prompt-defense-audit)** | LLM prompt defense scanner. 12 vectors, pure regex, < 5ms | ![](https://img.shields.io/github/stars/ppcvote/prompt-defense-audit?style=flat) |
-| **[ultralab-scanners](https://github.com/ppcvote/ultralab-scanners)** | SEO + AEO + AVS scanners. Zero deps. Powers UltraProbe | ![](https://img.shields.io/github/stars/ppcvote/ultralab-scanners?style=flat) |
-| **[discord-lobster](https://github.com/ppcvote/discord-lobster)** | Discord AI community manager. Auto-welcome + vibes + memory | ![](https://img.shields.io/github/stars/ppcvote/discord-lobster?style=flat) |
-| **[openclaw-claude-proxy](https://github.com/ppcvote/openclaw-claude-proxy)** | Claude Opus Telegram bot via OpenClaw | ![](https://img.shields.io/github/stars/ppcvote/openclaw-claude-proxy?style=flat) |
-| **[starter-claude-md](https://github.com/ppcvote/starter-claude-md)** | CLAUDE.md template for non-technical founders | ![](https://img.shields.io/github/stars/ppcvote/starter-claude-md?style=flat) |
+**AI Visibility Score Validation** — [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
+- 155 queries across 5 domains submitted to OpenAI `web_search`
+- 816 AI citations collected, 721 unique URLs scanned
+- Finding: median AVS of AI-cited sites is 77/100 (Grade B)
+- Finding: 96% of production AI apps have zero indirect injection defense (n=721)
 
 ### Contributing To
 
-- **[NVIDIA/garak](https://github.com/NVIDIA/garak/issues/1666)** — Prompt defense posture detectors
-- **[Cisco AI Defense](https://github.com/cisco-ai-defense/skill-scanner/issues/81)** — Prompt defense rule pack
-- **[OWASP LLM Top 10](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/pull/816)** — Tool reference
-- **[agentshield](https://github.com/affaan-m/agentshield/issues/45)** — Prompt defense posture rules
+| Project | What | Status |
+|---------|------|--------|
+| **[NVIDIA/garak](https://github.com/NVIDIA/garak/pull/1669)** | 6 defense posture patterns (CP-1001 — CP-1006) | PR open |
+| **[Cisco AI Defense](https://github.com/cisco-ai-defense/skill-scanner/issues/81)** | Prompt defense rule pack | Issue open |
+| **[OWASP LLM Top 10](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/pull/816)** | Tool reference | PR open |
 
-### Research
+### Open Source
 
-- **AI Visibility Score** — [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475) — 155 queries, 816 AI citations, 721 AVS scores. First empirical study of AI search citation behavior.
+| Repo | What |
+|------|------|
+| [avs-standard](https://github.com/ppcvote/avs-standard) | AASS + AVS spec, validation paper, dataset (CC BY 4.0) |
+| [prompt-defense-audit](https://github.com/ppcvote/prompt-defense-audit) | Prompt defense scanner — 12 vectors, CLI + library (MIT) |
+| [ultralab-scanners](https://github.com/ppcvote/ultralab-scanners) | SEO + AEO + AAO scanners — zero deps, TypeScript (MIT) |
+| [openclaw-claude-proxy](https://github.com/ppcvote/openclaw-claude-proxy) | Claude Opus Telegram bot via OpenClaw |
+| [discord-lobster](https://github.com/ppcvote/discord-lobster) | Discord AI community manager |
 
-### Numbers
+### Products (Ultra Lab)
 
-| Metric | Value |
-|--------|-------|
-| Products live | 5 |
-| AI agents running 24/7 | 4 |
-| Daily automated tasks | 105 |
-| Monthly active users | 7,500+ |
-| Blog posts (bilingual) | 199 |
-| Discord community | 146 members |
-| Open source repos | 14 |
-| Countries reached | 23 |
+| Product | What |
+|---------|------|
+| **UltraProbe** | AI Visibility Scanner — [ultralab.tw/en/probe](https://ultralab.tw/en/probe) |
+| **MindThread** | Threads automation — 27 accounts, 3.3M views |
+| **Agent Fleet** | 4 autonomous agents, 105 daily tasks |
+| **Ultra Advisor** | Financial planning SaaS — 18 visualization tools |
 
 ### Stack
 
-`React` `TypeScript` `Vite` `Tailwind` `Firebase` `Vercel` `Gemini` `Ollama` `Claude` `RTX 3060 Ti`
+`TypeScript` `React` `Vite` `Tailwind` `Firebase` `Vercel` `Gemini` `Claude` `Ollama`
 
-### Links
+### Contact
 
-- 🌐 [ultralab.tw](https://ultralab.tw)
-- 📝 [Blog](https://ultralab.tw/blog) (55 posts, bilingual)
-- 💬 [Discord](https://discord.gg/ewS4rWXvWk)
-- 📧 minyi@ultralab.tw
+minyi@ultralab.tw — [ultralab.tw](https://ultralab.tw/en/) — [Discord](https://discord.gg/ewS4rWXvWk)
