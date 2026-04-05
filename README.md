@@ -26,6 +26,7 @@ I build open-source AI security tools. One-person operation, 4 AI agents, 5 prod
 | Project | What | Status |
 |---------|------|--------|
 | **[NVIDIA/garak](https://github.com/NVIDIA/garak/pull/1669)** | 6 defense posture patterns (CP-1001 — CP-1006) | PR open |
+| **[NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/issues/1764)** | System prompt defense audit guardrail | Issue open |
 | **[Cisco AI Defense](https://github.com/cisco-ai-defense/skill-scanner/issues/81)** | Prompt defense rule pack | Issue open |
 | **[OWASP LLM Top 10](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/pull/816)** | Tool reference | PR open |
 
