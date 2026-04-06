@@ -37,6 +37,7 @@ I build open-source AI security tools. One-person operation, 4 AI agents, 5 prod
 
 | Repo | What |
 |------|------|
+| [ai-risk-assessment](https://github.com/ppcvote/ai-risk-assessment) | NIST AI RMF + Agentic Profile assessment for production agent fleet (CC BY 4.0) |
 | [avs-standard](https://github.com/ppcvote/avs-standard) | AASS + AVS spec, validation paper, dataset (CC BY 4.0) |
 | [prompt-defense-audit](https://github.com/ppcvote/prompt-defense-audit) | Prompt defense scanner — 12 vectors, CLI + library (MIT) |
 | [ultralab-scanners](https://github.com/ppcvote/ultralab-scanners) | SEO + AEO + AAO scanners — zero deps, TypeScript (MIT) |
