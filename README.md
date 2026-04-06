@@ -1,62 +1,59 @@
-## MinYi Xie
+## Hey, I'm MinYi.
 
-I build open-source AI security tools. One-person operation, 4 AI agents, 5 products in production.
+4 months ago I couldn't write code. Now I'm contributing to Microsoft, OWASP, and NVIDIA's AI security tools. One-person AI company from Taiwan.
 
-### AI Security & Standards
+I build with Claude and ship fast. Everything below was built solo.
 
-**[AI Application Security Standard (AASS)](https://github.com/ppcvote/avs-standard)** — Open standard for evaluating AI security, visibility, and data protection. Three dimensions, one score.
+---
 
-**[prompt-defense-audit](https://github.com/ppcvote/prompt-defense-audit)** — LLM system prompt defense scanner. 12 attack vectors, pure regex, < 5ms. `npx prompt-defense-audit "Your prompt"`
+### What I'm Building
 
-**[UltraProbe](https://ultralab.tw/en/probe)** — AI Visibility Scanner. SEO + AEO + Agent Accessibility. 92 checks, deterministic, zero cost.
+**[Ultra Lab](https://ultralab.tw/en)** — AI product studio. 4 autonomous agents, 40+ scheduled tasks, $0 infra cost.
 
-### Research
+**[UltraProbe](https://ultralab.tw/en/probe)** — AI Visibility Scanner. SEO + AEO + Agent Accessibility. 6 scan modes, 500+ targets scanned.
 
-**Prompt Defense Posture Study** — 1,646 production system prompts scanned from 4 public datasets
-- Scanner v1.1.0: LLM-calibrated regex patterns, 69.6% agreement with gpt-4o-mini (up from 51.8%)
-- 97.5% lack multi-language defense, 94.6% lack input validation, 84.8% lack harmful content prevention
-- Sources: ChatGPT, Claude, Grok, Perplexity, Cursor, v0, Copilot, 1,300+ GPT Store custom GPTs
+**[prompt-defense-audit](https://github.com/ppcvote/prompt-defense-audit)** — LLM system prompt defense scanner. 12 attack vectors, pure regex, zero AI cost, < 5ms.
+```bash
+npx prompt-defense-audit "Your system prompt here"
+```
 
-**AI Visibility Score Validation** — [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
-- 155 queries, 816 AI citations, 721 URLs scanned for SEO + AEO
-- Median AVS of AI-cited sites: 77/100 (Grade B)
+**[openclaw-claude-proxy](https://github.com/ppcvote/openclaw-claude-proxy)** — Opus 4.6 Telegram bot via Claude Max. One-click setup.
+
+**[discord-lobster](https://github.com/ppcvote/discord-lobster)** — Discord AI community manager. Auto-welcome, conversation vibes, member memory. $0/month.
+
+---
 
 ### Contributing To
 
-| Project | What | Status |
-|---------|------|--------|
-| **[NVIDIA/garak](https://github.com/NVIDIA/garak/pull/1669)** | 6 defense posture patterns (CP-1001 — CP-1006) | PR open |
-| **[Anthropic Cookbook](https://github.com/anthropics/claude-cookbooks/pull/502)** | Prompt defense audit recipe | PR open |
-| **[Microsoft Agent Governance](https://github.com/microsoft/agent-governance-toolkit/issues/821)** | Pre-deployment prompt audit | Issue open |
-| **[Microsoft Presidio](https://github.com/microsoft/presidio/issues/1933)** | PII prompt defense audit | Issue open |
-| **[NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA-NeMo/Guardrails/issues/1764)** | System prompt defense guardrail | Issue open |
-| **[Cisco AI Defense](https://github.com/cisco-ai-defense/skill-scanner/issues/81)** | Prompt defense rule pack | Issue open |
-| **[OWASP LLM Top 10](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/pull/816)** | Tool reference | PR open |
+| Project | PR | Status |
+|---------|-----|--------|
+| **[Microsoft / agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit/pull/854)** | PromptDefenseEvaluator — 1,110 lines, 58 tests | Under review |
+| **[OWASP / LLM Top 10](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/pull/816)** | Red Team Handbook tool listing | Open |
+| **[Anthropic / claude-cookbooks](https://github.com/anthropics/claude-cookbooks/pull/502)** | Prompt defense audit skill recipe | Open |
+| **[NVIDIA / garak](https://github.com/NVIDIA/garak/pull/1669)** | 6 defense posture community patterns | Closed |
+| **[Cisco / mcp-scanner](https://github.com/cisco-ai-defense/mcp-scanner/pull/134)** | Prompt Defense Analyzer | Closed |
 
-### Open Source
+---
 
-| Repo | What |
-|------|------|
-| [ai-risk-assessment](https://github.com/ppcvote/ai-risk-assessment) | NIST AI RMF + Agentic Profile assessment for production agent fleet (CC BY 4.0) |
-| [avs-standard](https://github.com/ppcvote/avs-standard) | AASS + AVS spec, validation paper, dataset (CC BY 4.0) |
-| [prompt-defense-audit](https://github.com/ppcvote/prompt-defense-audit) | Prompt defense scanner — 12 vectors, CLI + library (MIT) |
-| [ultralab-scanners](https://github.com/ppcvote/ultralab-scanners) | SEO + AEO + AAO scanners — zero deps, TypeScript (MIT) |
-| [openclaw-claude-proxy](https://github.com/ppcvote/openclaw-claude-proxy) | Claude Opus Telegram bot via OpenClaw |
-| [discord-lobster](https://github.com/ppcvote/discord-lobster) | Discord AI community manager |
+### Research
 
-### Products (Ultra Lab)
+**Prompt Defense Posture Study** — 1,646 production system prompts from ChatGPT, Claude, Grok, Copilot, 1,300+ GPT Store apps
+- 97.5% lack multi-language defense
+- 94.6% lack input validation
+- Scanner v1.1.0: 69.6% agreement with GPT-4o-mini
 
-| Product | What |
-|---------|------|
-| **UltraProbe** | AI Visibility Scanner — [ultralab.tw/en/probe](https://ultralab.tw/en/probe) |
-| **MindThread** | Threads automation — 27 accounts, 3.3M views |
-| **Agent Fleet** | 4 autonomous agents, 105 daily tasks |
-| **Ultra Advisor** | Financial planning SaaS — 18 visualization tools |
+**[AI Visibility Score (AVS)](https://github.com/ppcvote/avs-standard)** — Open standard with DOI: [10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
 
-### Stack
+---
 
-`TypeScript` `React` `Vite` `Tailwind` `Firebase` `Vercel` `Gemini` `Claude` `Ollama`
+### Numbers
 
-### Contact
+- **37** public repos
+- **4** AI agents running 24/7
+- **107** blog posts ([zh-TW](https://ultralab.tw/blog) / [EN](https://ultralab.tw/en/blog))
+- **268** Discord community members ([join](https://discord.gg/ewS4rWXvWk))
+- **0 → Microsoft PR** in 4 months ([read the story](https://ultralab.tw/en/blog/zero-to-microsoft-pr-in-4-months/))
 
-minyi@ultralab.tw — [ultralab.tw](https://ultralab.tw/en/) — [Discord](https://discord.gg/ewS4rWXvWk)
+---
+
+*I believe anyone can build with AI. I'm the proof. If you're building too, let's connect.*
