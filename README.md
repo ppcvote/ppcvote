@@ -13,8 +13,8 @@ I build open-source AI security tools. One-person operation, 4 AI agents, 5 prod
 ### Research
 
 **Prompt Defense Posture Study** — 1,646 production system prompts scanned from 4 public datasets
-- 97.8% have no indirect injection defense, 92.4% no role boundary enforcement
-- Average defense score: 36/100. Only 1.1% scored an A. 78.3% scored F.
+- Scanner v1.1.0: LLM-calibrated regex patterns, 69.6% agreement with gpt-4o-mini (up from 51.8%)
+- 97.5% lack multi-language defense, 94.6% lack input validation, 84.8% lack harmful content prevention
 - Sources: ChatGPT, Claude, Grok, Perplexity, Cursor, v0, Copilot, 1,300+ GPT Store custom GPTs
 
 **AI Visibility Score Validation** — [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
