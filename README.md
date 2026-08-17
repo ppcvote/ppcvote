@@ -13,20 +13,29 @@
 
 ---
 
-I build tools that protect AI systems from prompt injection attacks. My code is merged into Cisco and Microsoft's open-source security projects.
+I build tools that protect AI systems from prompt injection attacks. **15 PRs merged across seven organizations**: Microsoft, NVIDIA, Cisco, NIST, OWASP, the UK AI Security Institute, and the Casualty Actuarial Society.
 
-I run **[Ultra Lab](https://ultralab.tw/en)** — an AI product company with 4 autonomous agents handling content, security scans, and community management.
+Before this I spent ten years as a financial adviser (MDRT), which is why the actuarial and finance rows below exist: I read insurance code as a practitioner, not a tourist. I run **[Ultra Lab](https://ultralab.tw/en)**, an AI products company in Taiwan.
+
+My niche is unglamorous: I develop on Windows with a Traditional Chinese (cp950) locale, an environment almost no OSS contributor uses. Bugs that are invisible on Linux CI live there for years. Most of the merges below started that way.
 
 ---
 
 ### Open Source Contributions
 
-| Organization | Contribution | Status |
-|:------------|:-------------|:------:|
-| **Cisco AI Defense** · [mcp-scanner](https://github.com/cisco-ai-defense/mcp-scanner) | PromptDefenseAnalyzer — 12-vector prompt hardening | ✅ Merged |
-| **Microsoft** · [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit/pull/854) | PromptDefenseEvaluator — 63 tests, mypy strict, zero deps | ✅ Merged |
-| **NVIDIA** · [garak](https://github.com/NVIDIA/garak/issues/1666) | Defense posture probes — methodology discussion | 💬 Active |
-| **OWASP** · [LLM Top 10](https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/pull/816) | Red Team Handbook tool listing | 📝 Open |
+Every row links to the merged work; verify any of it with `gh pr list --author ppcvote --state merged`.
+
+| Organization | Merged | What |
+|:------------|:------:|:-----|
+| **Microsoft** · [PyRIT](https://github.com/microsoft/PyRIT/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) / [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 5 | OWASP LLM02 output-scorer pack; PromptDefenseEvaluator |
+| **OWASP** · [regression harness](https://github.com/OWASP/Agent-Security-Regression-Harness/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) / [AI testing guide](https://github.com/OWASP/www-project-ai-testing-guide/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 3 | Agent-security scenarios; testing-guide mapping |
+| **NVIDIA** · [SkillSpector](https://github.com/NVIDIA/SkillSpector/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 2 | Windows silent file-skip race; LP3 remediation guidance |
+| **UK AI Security Institute** · [inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) / [inspect_k8s_sandbox](https://github.com/UKGovernmentBEIS/inspect_k8s_sandbox/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 2 | Eval config migration; K8sError diagnostics |
+| **Casualty Actuarial Society** · [chainladder-python](https://github.com/casact/chainladder-python/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 1 | Quarterly/semiannual premium on-leveling crash |
+| **Cisco AI Defense** · [mcp-scanner](https://github.com/cisco-ai-defense/mcp-scanner/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 1 | PromptDefenseAnalyzer prompt hardening |
+| **NIST** · [dioptra](https://github.com/usnistgov/dioptra/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 1 | Task-plugin path convention docs |
+
+In review: [NASA](https://github.com/nasa/hds-core/pull/185) (forced-colors focus ring) · [MITRE](https://github.com/mitre-attack/mitreattack-python/pull/246) (UTF-8 changelog) · [CERT/CC](https://github.com/CERTCC/SSVC/pull/1225) (approved) · [FINOS](https://github.com/finos/git-proxy/pull/1676) (gitleaks range corruption on Windows) · [De Nederlandsche Bank](https://github.com/DeNederlandscheBank/name_matching/pull/52) (input-frame mutation) · [OpenSSF](https://github.com/ossf/cve-bin-tool/pull/5872) (17/18 language checkers dead on Windows)
 
 ### Tools
 
@@ -34,10 +43,10 @@ I run **[Ultra Lab](https://ultralab.tw/en)** — an AI product company with 4 a
   <tr>
     <td width="33%" valign="top">
       <h4><a href="https://github.com/ppcvote/prompt-defense-audit">prompt-defense-audit</a></h4>
-      <p>Pre-deploy scanner — checks system prompts for missing defenses. 12 attack vectors.</p>
+      <p>Pre-deploy scanner — checks system prompts for missing defenses. 17 attack vectors, SARIF 2.1.0 output.</p>
       <code>npx prompt-defense-audit "Your prompt"</code>
       <br><br>
-      <img src="https://img.shields.io/badge/tests-84-brightgreen?style=flat" alt="tests">
+      <img src="https://img.shields.io/badge/tests-196-brightgreen?style=flat" alt="tests">
       <img src="https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat" alt="coverage">
     </td>
     <td width="33%" valign="top">
@@ -85,5 +94,5 @@ Data: [gap-20260405.json](https://github.com/ppcvote/prompt-defense-audit/blob/m
 </p>
 
 <p align="center">
-  <a href="https://ultralab.tw/en">Website</a> · <a href="https://ultralab.tw/en/blog">Blog</a> · <a href="https://discord.gg/ewS4rWXvWk">Discord (270+ members)</a>
+  <a href="https://ultralab.tw/en">Website</a> · <a href="https://ultralab.tw/en/blog">Blog</a> · <a href="https://discord.gg/ewS4rWXvWk">Discord</a>
 </p>
