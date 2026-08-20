@@ -13,7 +13,7 @@
 
 ---
 
-I build tools that protect AI systems from prompt injection attacks. **15 PRs merged across seven organizations**: Microsoft, NVIDIA, Cisco, NIST, OWASP, the UK AI Security Institute, and the Casualty Actuarial Society.
+I build tools that protect AI systems from prompt injection attacks. **16 PRs merged across seven organizations**: Microsoft, NVIDIA, Cisco, NIST, OWASP, the UK AI Security Institute, and the Casualty Actuarial Society.
 
 Before this I spent ten years as a financial adviser (MDRT), which is why the actuarial and finance rows below exist: I read insurance code as a practitioner, not a tourist. I run **[Ultra Lab](https://ultralab.tw/en)**, an AI products company in Taiwan.
 
@@ -30,12 +30,12 @@ Every row links to the merged work; verify any of it with `gh pr list --author p
 | **Microsoft** · [PyRIT](https://github.com/microsoft/PyRIT/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) / [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 5 | OWASP LLM02 output-scorer pack; PromptDefenseEvaluator |
 | **OWASP** · [regression harness](https://github.com/OWASP/Agent-Security-Regression-Harness/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) / [AI testing guide](https://github.com/OWASP/www-project-ai-testing-guide/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 3 | Agent-security scenarios; testing-guide mapping |
 | **NVIDIA** · [SkillSpector](https://github.com/NVIDIA/SkillSpector/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 2 | Windows silent file-skip race; LP3 remediation guidance |
-| **UK AI Security Institute** · [inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) / [inspect_k8s_sandbox](https://github.com/UKGovernmentBEIS/inspect_k8s_sandbox/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 2 | Eval config migration; K8sError diagnostics |
+| **UK AI Security Institute** · [inspect_evals](https://github.com/UKGovernmentBEIS/inspect_evals/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) / [inspect_k8s_sandbox](https://github.com/UKGovernmentBEIS/inspect_k8s_sandbox/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 3 | Eval config migration; K8sError diagnostics; Helm arg-list corruption |
 | **Casualty Actuarial Society** · [chainladder-python](https://github.com/casact/chainladder-python/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 1 | Quarterly/semiannual premium on-leveling crash |
 | **Cisco AI Defense** · [mcp-scanner](https://github.com/cisco-ai-defense/mcp-scanner/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 1 | PromptDefenseAnalyzer prompt hardening |
 | **NIST** · [dioptra](https://github.com/usnistgov/dioptra/pulls?q=is%3Apr+author%3Appcvote+is%3Amerged) | 1 | Task-plugin path convention docs |
 
-In review: [NASA](https://github.com/nasa/hds-core/pull/185) (forced-colors focus ring) · [MITRE](https://github.com/mitre-attack/mitreattack-python/pull/246) (UTF-8 changelog) · [CERT/CC](https://github.com/CERTCC/SSVC/pull/1225) (approved) · [FINOS](https://github.com/finos/git-proxy/pull/1676) (gitleaks range corruption on Windows) · [De Nederlandsche Bank](https://github.com/DeNederlandscheBank/name_matching/pull/52) (input-frame mutation) · [OpenSSF](https://github.com/ossf/cve-bin-tool/pull/5872) (17/18 language checkers dead on Windows)
+In review: [CERT/CC](https://github.com/CERTCC/SSVC/pull/1225) (approved) · [MITRE](https://github.com/mitre-attack/mitreattack-python/pull/246) (UTF-8 changelog) · [NASA](https://github.com/nasa/hds-core/pull/185) (forced-colors focus ring) · [FINOS](https://github.com/finos/git-proxy/pull/1676) (gitleaks range corruption on Windows) · [De Nederlandsche Bank](https://github.com/DeNederlandscheBank/name_matching/pull/52) (input-frame mutation) · [OpenSSF](https://github.com/ossf/cve-bin-tool/pull/5872) (17/18 language checkers dead on Windows)
 
 ### Tools
 
